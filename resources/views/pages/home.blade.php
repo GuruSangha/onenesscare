@@ -4,7 +4,7 @@
    <section class="hero-section mt-3">
       <div class="container-fluid">
          <div class="hero_inner">
-            <div class="owl-carousel owl-theme hero-slider">
+            <div class="owl-carousel owl-theme hero-slider smooth-carousel">
 
                {{-- Slide 1 --}}
                <div class="hero-item">
@@ -248,7 +248,7 @@
             </div>
 
             {{-- Services Carousel --}}
-            <div class="service-slider owl-carousel owl-theme">
+            <div class="service-slider owl-carousel owl-theme smooth-carousel_Down">
                @php
                   $services = [
                      ['title' => 'Job Support', 'desc' => 'Helping individuals find and keep meaningful jobs.'],

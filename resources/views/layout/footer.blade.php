@@ -89,6 +89,23 @@
       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
          return new bootstrap.Tooltip(tooltipTriggerEl)
       })
+      $('.smooth-carousel, .smooth-carousel_Down').each(function () {
+        let itemsCount = $(this).hasClass('smooth-carousel_Down') ? 4 : 1;
+
+        $(this).owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1500,
+          smartSpeed: 1500,
+          items: itemsCount
+        });
+      });
+
+
+
    </script>
 </body>
 
