@@ -18,8 +18,8 @@
    <link rel="stylesheet" href="{{ asset('css/style.css')}}" type="text/css">
 
    <!--fontawesome CSS-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+   <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
+   <link rel="stylesheet" href="{{ asset('css/remixicon.css') }}">
 
 </head>
 
