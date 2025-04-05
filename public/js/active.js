@@ -7,6 +7,9 @@
        items: 1,
        autoplayTimeout: 3000,
        autoplay: true,
+       autoplayTimeout: 5000,
+       autoplaySpeed: 1500,
+       smartSpeed: 1500,
        dots: true,
        navText: [
       "<i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i>",
@@ -25,7 +28,7 @@
    });
    
 
-   $('.blog-slider').owlCarousel({
+$('.blog-slider').owlCarousel({
     loop: true,
     margin: 20,
     nav: false,
@@ -56,7 +59,7 @@ $('.service-slider').owlCarousel({
     items: 4,
     autoplayTimeout: 3000,
     autoplay: true,
-    dots: true,
+    dots: false,
     navText: [
    "<i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i>",
    "<i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i>"],

@@ -249,36 +249,37 @@
 
             {{-- Services Carousel --}}
             <div class="service-slider owl-carousel owl-theme smooth-carousel_Down">
-               @php
-                  $services = [
-                     ['title' => 'Job Support', 'desc' => 'Helping individuals find and keep meaningful jobs.'],
-                     ['title' => 'Personal Care', 'desc' => 'Assisting with daily personal activities and self-care.'],
-                     ['title' => 'Shared Living', 'desc' => 'Support for individuals in shared or group housing.'],
-                     ['title' => 'Home Help', 'desc' => 'Assistance with cleaning, cooking, and home maintenance.'],
-                     ['title' => 'High Support', 'desc' => 'Specialized medical care for complex health needs.'],
-                     ['title' => 'Safe Transport', 'desc' => 'Helping individuals travel safely and independently.'],
-                     ['title' => 'Social Skills', 'desc' => 'Encouraging community engagement through mentoring.'],
-                     ['title' => 'Community Fun', 'desc' => 'Providing access to social and recreational events.'],
-                     ['title' => 'Life Changes', 'desc' => 'Support with finances, skills, and accommodations.'],
-                     ['title' => 'Medical Care', 'desc' => 'Providing in-home nursing and medical support.'],
-                     ['title' => 'Life Skills', 'desc' => 'Training in daily tasks like budgeting and cooking.'],
-                     ['title' => 'Job Training', 'desc' => 'Helping individuals secure and sustain employment.'],
-                     ['title' => 'Group Events', 'desc' => 'Engaging activities to promote social interaction.'],
-                  ];
-               @endphp
+            @php
+   $services = [
+      ['title' => 'Job Support', 'desc' => 'Helping individuals find and keep meaningful jobs.', 'image' => 'job-support.jpg'],
+      ['title' => 'Personal Care', 'desc' => 'Assisting with daily personal activities and self-care.', 'image' => 'personal-care.jpg'],
+      ['title' => 'Shared Living', 'desc' => 'Support for individuals in shared or group housing.', 'image' => 'shared-living.jpg'],
+      ['title' => 'Home Help', 'desc' => 'Assistance with cleaning, cooking, and home maintenance.', 'image' => 'home-help.jpg'],
+      ['title' => 'High Support', 'desc' => 'Specialized medical care for complex health needs.', 'image' => 'high-support.jpg'],
+      ['title' => 'Safe Transport', 'desc' => 'Helping individuals travel safely and independently.', 'image' => 'safe-transport.jpg'],
+      ['title' => 'Social Skills', 'desc' => 'Encouraging community engagement through mentoring.', 'image' => 'social-skills.jpg'],
+      ['title' => 'Community Fun', 'desc' => 'Providing access to social and recreational events.', 'image' => 'community-fun.jpg'],
+      ['title' => 'Life Changes', 'desc' => 'Support with finances, skills, and accommodations.', 'image' => 'life-changes.jpg'],
+      ['title' => 'Medical Care', 'desc' => 'Providing in-home nursing and medical support.', 'image' => 'medical-care.jpg'],
+      ['title' => 'Life Skills', 'desc' => 'Training in daily tasks like budgeting and cooking.', 'image' => 'life-skills.jpg'],
+      ['title' => 'Job Training', 'desc' => 'Helping individuals secure and sustain employment.', 'image' => 'job-training.jpg'],
+      ['title' => 'Group Events', 'desc' => 'Engaging activities to promote social interaction.', 'image' => 'group-events.jpg'],
+   ];
+@endphp
 
-               @foreach($services as $index => $service)
-                  <div class="service-slide">
-                     <div class="service-number">{{ str_pad($index + 1, 2, '0', STR_PAD_LEFT) }}</div>
-                     <div class="service_img">
-                        <img src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-150x150.jpg" class="img-fluid" alt="{{ $service['title'] }}">
-                     </div>
-                     <div class="service-wrapper">
-                        <h3>{{ $service['title'] }}</h3>
-                        <p class="pra">{{ $service['desc'] }}</p>
-                     </div>
-                  </div>
-               @endforeach
+   @foreach($services as $index => $service)
+      <div class="service-slide">
+         <div class="service-number">{{ str_pad($index + 1, 2, '0', STR_PAD_LEFT) }}</div>
+         <div class="service_img">
+            <img src="{{ asset('images/services/' . $service['image']) }}" class="img-fluid" alt="{{ $service['title'] }}">
+         </div>
+         <div class="service-wrapper">
+            <h3>{{ $service['title'] }}</h3>
+            <p class="pra">{{ $service['desc'] }}</p>
+         </div>
+      </div>
+   @endforeach
+
             </div>
          </div>
       </div>
@@ -368,46 +369,45 @@
          <h5 class="subheading text-center">Our Portfolio</h5>
          <h2 class="heading text-center">Explore Our Portfolio</h2>
          <div class="portfolio_inner">
-            <div class="row">
-               @php
-                  $projects = [
-                     ['title' => 'Medical Camps', 'category' => 'Old Care', 'img' => 'project-img1.jpg', 'link' => 'medical-camps'],
-                     ['title' => 'NDIS Management', 'category' => 'Medical', 'img' => 'project-img2.jpg', 'link' => 'ndis-plan-management'],
-                     ['title' => 'Disabilities Schemes', 'category' => 'Disability', 'img' => 'project-img3.jpg', 'link' => 'disabilities-schemes'],
-                     ['title' => 'Physical Activities', 'category' => 'Medical', 'img' => 'project-img4.jpg', 'link' => 'physical-activities'],
-                     ['title' => 'Therapeutic Supports', 'category' => 'Health', 'img' => 'project-img5.jpg', 'link' => 'therapeutic-supports'],
-                     ['title' => 'Seniors Health Care', 'category' => 'Health Care', 'img' => 'project-img6.jpg', 'link' => 'seniors-health-care'],
-                  ];
-               @endphp
+   <div class="row">
+      @php
+         $projects = [
+            ['title' => 'Medical Camps', 'category' => 'Old Care', 'img' => 'project-img1.jpg', 'link' => 'medical-camps'],
+            ['title' => 'NDIS Management', 'category' => 'Medical', 'img' => 'project-img2.jpg', 'link' => 'ndis-plan-management'],
+            ['title' => 'Disabilities Schemes', 'category' => 'Disability', 'img' => 'project-img3.jpg', 'link' => 'disabilities-schemes'],
+            ['title' => 'Physical Activities', 'category' => 'Medical', 'img' => 'project-img4.jpg', 'link' => 'physical-activities'],
+            ['title' => 'Therapeutic Supports', 'category' => 'Health', 'img' => 'project-img5.jpg', 'link' => 'therapeutic-supports'],
+            ['title' => 'Seniors Health Care', 'category' => 'Health Care', 'img' => 'project-img6.jpg', 'link' => 'seniors-health-care'],
+         ];
+      @endphp
 
-               @foreach($projects as $project)
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                     <div class="tcr-projects-wrapper">
-                        <div class="tcr-projects-image">
-                           <img src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/{{ $project['img'] }}"
-                                alt="{{ $project['title'] }}" class="img-fluid" decoding="async">
-                        </div>
-                        <div class="tcr-projects-content">
-                           <div class="tcr-projects-title">
-                              <a class="tcr-projects-title-link"
-                                 href="https://themecrafter.com/zaver/project/{{ $project['link'] }}">{{ $project['title'] }}</a>
-                           </div>
-                           <div class="tcr-project-category">
-                              <span>{{ $project['category'] }}</span>
-                           </div>
-                        </div>
-                     </div>
+      @foreach($projects as $project)
+         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+            <div class="tcr-projects-wrapper">
+               <div class="tcr-projects-image">
+                  <img src="{{ asset('images/project/' . $project['img']) }}" class="img-fluid" alt="{{ $project['title'] }}">
+               </div>
+               <div class="tcr-projects-content">
+                  <div class="tcr-projects-title">
+                     <a class="tcr-projects-title-link" href="#">{{ $project['title'] }}</a>
                   </div>
-               @endforeach
+                  <div class="tcr-project-category">
+                     <span>{{ $project['category'] }}</span>
+                  </div>
+               </div>
             </div>
          </div>
+      @endforeach
+   </div>
+</div>
+
       </div>
    </section>
 
    <!--Portfolio Section End -->
 
    <!--Blog Section Start -->
-   <section class="blog_sec sec_pad">
+   <!-- <section class="blog_sec sec_pad">
       <div class="container">
          <h5 class="subheading text-center">Explore News with Us</h5>
          <h2 class="heading text-center">Latest News and Articles</h2>
@@ -449,7 +449,8 @@
             </div>
          </div>
       </div>
-   </section>
+   </section> -->
+   <!--Blog Section End -->
 
    <!--Portfolio Section End -->
 @endsection
