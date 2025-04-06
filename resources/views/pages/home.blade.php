@@ -87,7 +87,7 @@
                   We provide a comprehensive range of services tailored to meet the unique needs of NDIS participants,
                   ensuring they receive the best possible care and support.
                </p>
-               <a href="#" class="mt-4 common_btn why_btn py-3">Contact us</a>
+               <a href="/contact" class="mt-4 common_btn why_btn py-3">Contact us</a>
             </div>
          </div>
 
@@ -174,7 +174,7 @@
             <div class="col-lg-6 ps-lg-4">
                <div class="about_right">
                   <h5 class="subheading">About US</h5>
-                  <h2 class="heading">About Your NDIS Supports Or Services</h2>
+                  <h2 class="heading">About Oneness Care</h2>
 
                   <p class="pra mt-3">
                      Oneness Care, in 2024, is a dedicated disability service provider based in Ballarat and Melbourne. 
@@ -209,7 +209,7 @@
                      </div>
                   </div>
 
-                  <a href="#" class="mt-4 common_btn about_btn">More About Us</a>
+                  <a href="/about" class="mt-4 common_btn about_btn">More About Us</a>
                </div>
             </div>
          </div>
@@ -250,21 +250,21 @@
             {{-- Services Carousel --}}
             <div class="service-slider owl-carousel owl-theme smooth-carousel_Down">
             @php
-   $services = [
-      ['title' => 'Job Support', 'desc' => 'Helping individuals find and keep meaningful jobs.', 'image' => 'job-support.jpg'],
-      ['title' => 'Personal Care', 'desc' => 'Assisting with daily personal activities and self-care.', 'image' => 'personal-care.jpg'],
-      ['title' => 'Shared Living', 'desc' => 'Support for individuals in shared or group housing.', 'image' => 'shared-living.jpg'],
-      ['title' => 'Home Help', 'desc' => 'Assistance with cleaning, cooking, and home maintenance.', 'image' => 'home-help.jpg'],
-      ['title' => 'High Support', 'desc' => 'Specialized medical care for complex health needs.', 'image' => 'high-support.jpg'],
-      ['title' => 'Safe Transport', 'desc' => 'Helping individuals travel safely and independently.', 'image' => 'safe-transport.jpg'],
-      ['title' => 'Social Skills', 'desc' => 'Encouraging community engagement through mentoring.', 'image' => 'social-skills.jpg'],
-      ['title' => 'Community Fun', 'desc' => 'Providing access to social and recreational events.', 'image' => 'community-fun.jpg'],
-      ['title' => 'Life Changes', 'desc' => 'Support with finances, skills, and accommodations.', 'image' => 'life-changes.jpg'],
-      ['title' => 'Medical Care', 'desc' => 'Providing in-home nursing and medical support.', 'image' => 'medical-care.jpg'],
-      ['title' => 'Life Skills', 'desc' => 'Training in daily tasks like budgeting and cooking.', 'image' => 'life-skills.jpg'],
-      ['title' => 'Job Training', 'desc' => 'Helping individuals secure and sustain employment.', 'image' => 'job-training.jpg'],
-      ['title' => 'Group Events', 'desc' => 'Engaging activities to promote social interaction.', 'image' => 'group-events.jpg'],
-   ];
+            $services = [
+    ['title' => 'Employment Support', 'desc' => 'Tailored assistance to access and maintain jobs or higher education.', 'image' => 'job-support.jpg'],
+    ['title' => 'Daily Personal Care', 'desc' => 'Support with bathing, dressing, appointments, and more.', 'image' => 'personal-care.jpg'],
+    ['title' => 'Shared Living Assistance', 'desc' => 'Support in group living, including daily tasks and supervision.', 'image' => 'shared-living.jpg'],
+    ['title' => 'Household Help', 'desc' => 'Help with cleaning, gardening, laundry, and meals.', 'image' => 'home-help.jpg'],
+    ['title' => 'High Intensity Care', 'desc' => 'Nursing-led support for complex medical needs.', 'image' => 'high-support.jpg'],
+    ['title' => 'Transport Assistance', 'desc' => 'Safe, scheduled transport for appointments and daily tasks.', 'image' => 'safe-transport.jpg'],
+    ['title' => 'Community Participation', 'desc' => 'Support for joining local events and building resilience.', 'image' => 'social-skills.jpg'],
+    ['title' => 'Social & Recreational Access', 'desc' => 'Help to engage in fun, skill-building community activities.', 'image' => 'community-fun.jpg'],
+    ['title' => 'Life Transitions Support', 'desc' => 'Guidance with planning, tenancy, and managing life stages.', 'image' => 'life-changes.jpg'],
+    ['title' => 'In-Home Nursing Care', 'desc' => 'Qualified nurses provide specialized health support.', 'image' => 'medical-care.jpg'],
+    ['title' => 'Life Skills Development', 'desc' => 'Training in daily living skills, communication, and wellbeing.', 'image' => 'life-skills.jpg'],
+    ['title' => 'Supported Employment', 'desc' => 'Job training and tailored workplace support services.', 'image' => 'job-training.jpg'],
+    ['title' => 'Group Centre Activities', 'desc' => 'Fun group activities to develop social and daily skills.', 'image' => 'group-events.jpg'],
+];
 @endphp
 
    @foreach($services as $index => $service)
@@ -276,6 +276,9 @@
          <div class="service-wrapper">
             <h3>{{ $service['title'] }}</h3>
             <p class="pra">{{ $service['desc'] }}</p>
+            <a href="#" class="servicemore">
+               <i class="ri-arrow-right-up-line"></i>
+            </a>
          </div>
       </div>
    @endforeach
@@ -301,13 +304,12 @@
                   </div>
                </div>
             </div>
-
             <div class="col-lg-8">
                {{-- Blade Testimonial Loop --}}
                @php
                   $testimonials = [
                      [
-                        'image' => 'https://themecrafter.com/zaver/wp-content/uploads/2023/09/testimonials-img01.jpg',
+                        'image' => 'images/testimonials-img01.jpg',
                         'quote' => 'Oneness Care has been a life-changing support system for my family. Their compassionate approach and dedication have truly made a difference in our daily lives.',
                         'name' => 'Cassie Carleton',
                         'designation' => 'Doctor',

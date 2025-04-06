@@ -16,3 +16,15 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+Route::get('/about', function () {
+    return view('pages.about');
+});
+
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+
+
+Route::get('/ndis-support', function () {
+    return view('pages.ndis-support');
+});

@@ -26,16 +26,16 @@
                         <div class="col-md-4">
                            <h4>Useful Link</h4>
                            <ul class="footer_link">
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#">Blog Classic</a></li>
-                              <li><a href="#">About us</a></li>
-                              <li><a href="#">Our Team</a></li>
+                              <li><a href="/">Home</a></li>
+                              <!-- <li><a href="#">Blog Classic</a></li> -->
+                              <li><a href="/about">About us</a></li>
+                              <li><a href="/about#team">Our Team</a></li>
                            </ul>
                         </div>
                         <div class="col-md-4">
                            <h4>Services</h4>
                            <ul class="footer_link">
-                              <li><a href="#">NDIS Support</a></li>
+                              <li><a href="/ndis-support">NDIS Support</a></li>
                               <li><a href="#">Disability Services</a></li>
                               <li><a href="#">In Home Support </a></li>
                               <li><a href="#">Senior Care</a></li>
@@ -44,9 +44,9 @@
                         <div class="col-md-4">
                            <h4>Company</h4>
                            <ul class="footer_link">
-                              <li><a href="#">Help Center</a></li>
+                              <li><a href="/contact">Help Center</a></li>
                               <li><a href="#">Careers</a></li>
-                              <li><a href="#">Pricacy</a></li>
+                              <li><a href="#">Privacy</a></li>
                            </ul>
                         </div>
                      </div>
@@ -67,7 +67,7 @@
                   </ul>
                </div>
                <div class="col-md-6">
-                  <p class="text-end">Copyright by <a href="#">ONENESS CARE.</a> All rights reserved</p>
+                  <p class="text-end">Copyright by <a href="/">ONENESS CARE.</a> All rights reserved</p>
                </div>
             </div>
          </div>

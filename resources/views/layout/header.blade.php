@@ -38,10 +38,10 @@
             <div class="collapse navbar-collapse " id="navbarNavDropdown">
                <ul class="navbar-nav m-auto">
                   <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#"> About</a>
+                     <a class="nav-link" href="/about"> About</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#">Features</a>
@@ -52,21 +52,28 @@
                         Services
                      </a>
                      <ul class="dropdown-menu" aria-labelledby="ServicesMenu">
-                        <li><a class="dropdown-item" href="#">Assist Personal Activities</a></li>
-                        <li><a class="dropdown-item" href="#">Community Nursing Care</a></li>
-                        <li><a class="dropdown-item" href="#">Assist-Travel/Transport</a></li>
-                        <li><a class="dropdown-item" href="#">Daily Tasks & Shared Living</a></li>
-                        <li><a class="dropdown-item" href="#">Household Tasks</a></li>
-                        <li><a class="dropdown-item" href="#">Development-Life Skills</a></li>
-                        <li><a class="dropdown-item" href="#">Participate Community</a></li>
-                     </ul>
+                        <li><a class="dropdown-item" href="#">Employment Support</a></li>
+                        <li><a class="dropdown-item" href="#">Daily Personal Care</a></li>
+                        <li><a class="dropdown-item" href="#">Shared Living Assistance</a></li>
+                        <li><a class="dropdown-item" href="#">Household Help</a></li>
+                        <li><a class="dropdown-item" href="#">High Intensity Care</a></li>
+                        <li><a class="dropdown-item" href="#">Transport Assistance</a></li>
+                        <li><a class="dropdown-item" href="#">Community Participation</a></li>
+                        <li><a class="dropdown-item" href="#">Social & Recreational Access</a></li>
+                        <li><a class="dropdown-item" href="#">Life Transitions Support</a></li>
+                        <li><a class="dropdown-item" href="#">In-Home Nursing Care</a></li>
+                        <li><a class="dropdown-item" href="#">Life Skills Development</a></li>
+                        <li><a class="dropdown-item" href="#">Supported Employment</a></li>
+                        <li><a class="dropdown-item" href="#">Group Centre Activities</a></li>
+                        </ul>
+
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">NDIS Support</a>
+                     <a class="nav-link" href="/ndis-support">NDIS Support</a>
                   </li>
                </ul>
             </div>
-            <a href="#" class="contact_btn">Contact Us</a>
+            <a href="/contact" class="contact_btn">Contact Us</a>
          </div>
       </nav>
    </header>
