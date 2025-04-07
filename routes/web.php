@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +21,8 @@ Route::get('/about', function () {
     return view('pages.about');
 });
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
+Route::get('/contact', [ContactController::class, 'show'])->name('contact.show');
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
 
 
 Route::get('/ndis-support', function () {

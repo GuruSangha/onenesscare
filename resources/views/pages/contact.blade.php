@@ -127,7 +127,7 @@
    </div>
 
 
-   <div class="contact_detail">
+   <div class="contact_detail" id="contact">
       <div class="container-fluid">
          <div class="row">
             <div class="col-lg-6">
@@ -142,43 +142,49 @@
             </div>
             <div class="col-lg-6">
                <div class="appointment-form">
-                  <div class="row">
-                     <div class="col-lg-6">
-                        <div class="input-group">
-                           <input class="form-control" placeholder="Full Name" value="" type="text" name="your-name">
+                  @if(session('success'))
+                       <div class="alert alert-success">{{ session('success') }}</div>
+                  @endif
+                  <form action="{{ route('contact.send') }}" method="POST">
+                     @csrf
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <div class="input-group">
+                              <input class="form-control" placeholder="Full Name" value="" type="text" name="full_name">
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="input-group">
+                              <input class="form-control" placeholder="Email" value="" type="email" name="email">
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="input-group">
+                              <input class="form-control" placeholder="Phone number" value="" type="text"
+                                 name="phone">
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="input-group">
+                              <input class="form-control" placeholder="Subject" value="" type="text" name="subject">
+                           </div>
                         </div>
                      </div>
-                     <div class="col-lg-6">
-                        <div class="input-group">
-                           <input class="form-control" placeholder="Email" value="" type="email" name="email">
-                        </div>
-                     </div>
-                     <div class="col-lg-6">
-                        <div class="input-group">
-                           <input class="form-control" placeholder="Phone number" value="" type="text"
-                              name="phone-number">
-                        </div>
-                     </div>
-                     <div class="col-lg-6">
-                        <div class="input-group">
-                           <input class="form-control" placeholder="Subject" value="" type="text" name="subject">
-                        </div>
-                     </div>
-                  </div>
 
-                  <div class="row">
-                     <div class="col-sm-12">
-                        <div class="input-group">
-                           <textarea class="form-control" id="message" name="message" rows="4" cols="50"
-                              placeholder="Write a message"></textarea>
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="input-group">
+                              <textarea class="form-control" id="message" name="message" rows="4" cols="50"
+                                 placeholder="Write a message"></textarea>
+                           </div>
                         </div>
                      </div>
-                  </div>
 
-                  <div class="col-12">
-                     <button type="submit" class="common_btn border-0 py-3" id="SendMessage">Send Message <i
-                           class="ri-arrow-right-up-line ms-2"></i></button>
-                  </div>
+                     <div class="col-12">
+                        <button type="submit" class="common_btn border-0 py-3" id="SendMessage">Send Message <i
+                              class="ri-arrow-right-up-line ms-2"></i></button>
+                     </div>
+                  </form>
                </div>
             </div>
          </div>

@@ -38,10 +38,10 @@
             <div class="collapse navbar-collapse " id="navbarNavDropdown">
                <ul class="navbar-nav m-auto">
                   <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="/">Home</a>
+                     <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" aria-current="page" href="/">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="/about"> About</a>
+                     <a class="nav-link {{ request()->is('about') ? 'active' : '' }}" href="/about"> About</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#">Features</a>
@@ -69,11 +69,11 @@
 
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="/ndis-support">NDIS Support</a>
+                     <a class="nav-link {{ request()->is('ndis-support') ? 'active' : '' }}" href="/ndis-support">NDIS Support</a>
                   </li>
                </ul>
             </div>
-            <a href="/contact" class="contact_btn">Contact Us</a>
+            <a href="/contact" class="contact_btn {{ request()->is('contact') ? 'active' : '' }}">Contact Us</a>
          </div>
       </nav>
    </header>
