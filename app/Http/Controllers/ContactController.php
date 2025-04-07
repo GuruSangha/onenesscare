@@ -31,7 +31,7 @@ class ContactController extends Controller
             'message'   => $request->message
         ];
 
-        Mail::to(config('mail.admin_address'))->send(new ContactMail($data));
+        Mail::to(config('mail.admin_address'))->cc(config('mail.admin_pri_address'))->send(new ContactMail($data));
         return redirect()->to(url()->previous() . '#contact')->with('success', 'Your message has been sent successfully!');
     }
 }

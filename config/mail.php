@@ -132,5 +132,6 @@ return [
     ],
 
     'admin_address' => env('MAIL_ADMIN_ADDRESS'),
+    'admin_pri_address' => env('MAIL_ADMIN_PRI_ADDRESS'),
 
 ];
