@@ -44,7 +44,7 @@
                      <a class="nav-link {{ request()->is('about') ? 'active' : '' }}" href="/about"> About</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Features</a>
+                     <a class="nav-link {{ request()->is('about') ? 'active' : '' }}" href="/faq">Faq</a>
                   </li>
                   <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="#" id="ServicesMenu" role="button"

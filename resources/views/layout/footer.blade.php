@@ -30,6 +30,7 @@
                               <!-- <li><a href="#">Blog Classic</a></li> -->
                               <li><a href="/about">About us</a></li>
                               <li><a href="/about#team">Our Team</a></li>
+                              <li><a href="/faq">FAQ</a></li>
                            </ul>
                         </div>
                         <div class="col-md-4">
@@ -45,7 +46,7 @@
                            <h4>Company</h4>
                            <ul class="footer_link">
                               <li><a href="/contact">Help Center</a></li>
-                              <li><a href="#">Careers</a></li>
+                              <li><a href="/careers">Careers</a></li>
                               <li><a href="#">Privacy</a></li>
                            </ul>
                         </div>

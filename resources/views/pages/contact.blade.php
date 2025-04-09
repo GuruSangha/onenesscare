@@ -30,7 +30,7 @@
                      team is here to help you every step of the way. Reach out today and let's work together to achieve
                      your goals.
                   </p>
-                  <a href="#" class="common_btn about_btn mt-4 mt-lg-5">More About us</a>
+                  <a href="/about" class="common_btn about_btn mt-4 mt-lg-5">More About us</a>
                </div>
             </div>
             <div class="col-lg-7">

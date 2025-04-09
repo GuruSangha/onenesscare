@@ -28,3 +28,13 @@ Route::post('/contact', [ContactController::class, 'send'])->name('contact.send'
 Route::get('/ndis-support', function () {
     return view('pages.ndis-support');
 });
+
+Route::get('/faq', function () {
+    return view('pages.faq');
+});
+
+
+Route::get('/careers', function () {
+    return view('pages.careers');
+});
+
