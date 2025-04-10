@@ -21,11 +21,11 @@
       <div class="row">
          <div class="col-lg-6">
             <h5 class="subheading">HOW WE HELP</h5>
-            <h2 class="heading">How Can United Disability Assist You with Your NDIS Plan?</h2>
+            <h2 class="heading">How Can Oneness Care Assist You with Your NDIS Plan?</h2>
          </div>
          <div class="col-lg-6 ps-lg-4">
             <p class="pra">
-               At United Disability Care, we support you in making the most of your NDIS plan. With a deep understanding of the NDIS framework, our dedicated team is here to offer personalised guidance, tailored services, and genuine care every step of the way.
+               At Oneness Care, we support you in making the most of your NDIS plan. With a deep understanding of the NDIS framework, our dedicated team is here to offer personalised guidance, tailored services, and genuine care every step of the way.
             </p>
             <a href="/contact" class="mt-4 common_btn why_btn py-3">Get in Touch</a>
          </div>
@@ -91,43 +91,44 @@
          <div class="col-md-7" data-aos="fade-right">
             <div class="support_sec_left">
                <h2 class="heading">Getting Started with Your NDIS Plan</h2>
-               <p class="pra mt-3">
-                  Once your NDIS plan is approved, existing funding arrangements will end. That’s why it’s important to inform United Disability Care as soon as your new plan is in place—so we can help ensure that your current services continue smoothly without interruption.
+               <p class="pra mt-3">At Oneness Care, we’re here to make sure your journey with the NDIS is smooth, supported, and stress-free. Whether your plan is brand new or just renewed, we’ll help you get the most from it — and make sure your supports keep flowing without interruption.
                </p>
 
                <p class="pra mt-3">
-                  Whether you choose to manage your plan independently or prefer support, our team is here to guide you through every step. Our dedicated Support Coordinators are experts at helping you get the most out of your NDIS funding.
-               </p>
+               We understand that NDIS can feel overwhelming sometimes. That’s why our friendly, down-to-earth team is here to walk beside you and guide you every step of the way.
+                 </p>
 
                <h6>Here’s how we support your journey:</h6>
                <ul>
    <li>
       <i class="ri-check-line"></i>
-      Comprehensive Client Assessment
+      <p><b>One-on-one client meet-ups</b> – We get to know you properly, not just your paperwork.</p>
    </li>
    <li>
       <i class="ri-check-line"></i>
-      Tailored Support Planning
+      <p><b>Clear, honest support planning</b> – We’ll help you plan supports around your real goals and day-to-day life.</p>
    </li>
    <li>
       <i class="ri-check-line"></i>
-      Integrated Community Resources
+      <p><b>Community connection</b> – Need to get out more? Try new things? We’ll link you with the right groups, services, or programs.
+      </p>
    </li>
    <li>
       <i class="ri-check-line"></i>
-      Custom Service Agreements
+      <p><b>Simple, easy-to-understand service agreements</b> – No jargon, just clear support.</p>
    </li>
    <li>
       <i class="ri-check-line"></i>
-      NDIS Budget Guidance
+      <p><b>NDIS budget help</b> – We’ll help you understand how to use your funding wisely.
+      </p>
    </li>
    <li>
       <i class="ri-check-line"></i>
-      Trusted Provider Connections
+      <p><b>Ongoing check-ins</b> – We stay in touch and adjust supports when your needs change</p>
    </li>
    <li>
       <i class="ri-check-line"></i>
-      Ongoing Plan Support
+      <p><b>Trusted provider referrals</b> – Need allied health, transport, nursing, or STA? We’ve got trusted connections ready to help.</p>
    </li>
 </ul>
 

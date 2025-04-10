@@ -28,7 +28,7 @@
    <header class="header">
       <nav class="navbar navbar-expand-lg pt-0">
          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/">
                <img src="{{ asset('images/logo.png') }}" class="img-fluid" alt="OnenessCare Logo" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -44,7 +44,7 @@
                      <a class="nav-link {{ request()->is('about') ? 'active' : '' }}" href="/about"> About</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link {{ request()->is('about') ? 'active' : '' }}" href="/faq">Faq</a>
+                     <a class="nav-link {{ request()->is('faq') ? 'active' : '' }}" href="/faq">Faq</a>
                   </li>
                   <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" href="#" id="ServicesMenu" role="button"

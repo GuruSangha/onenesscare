@@ -596,7 +596,7 @@ body {
 .marquee-title {
    font-size: 100px;
    line-height: 100px;
-   color: rgba(225, 225, 225, 0.5);
+   color: rgba(225, 225, 225, 0.8);
    text-transform: uppercase;
    font-weight: bold;
 }
@@ -604,14 +604,16 @@ body {
    background: url('../images/random-anywhere.png') no-repeat;
    background-size: cover;
    min-height: 424px;
-   padding: 176px 0px 148px 0px;
+   padding: 176px 0px 54px 0px;
    border-radius: 30px;
    background-position: center;
    position: relative;
+   display: flex;
+   align-items: flex-end;
 }
 .tcr_marquee_inner:before {
    content: "";
-   background: rgba(0,0,0,0.5);
+   background: rgba(0,0,0,0.3);
    position: absolute;
    left: 0;
    height: 100%;
@@ -1298,7 +1300,6 @@ font-weight: 400;
    font-size: 16px;
    line-height: 24px;
    color: #5c5b5b;
-   width: calc(50% - 30px);
    position: relative;
    padding-left: 31px;
 }
@@ -1323,14 +1324,26 @@ font-weight: 400;
    font-size: 30px;
    color: #285430;
 }
+.ndis_whychoose .whychoose_card:hover .why_icon{
+   background-color: #285430;
+}  
+.ndis_whychoose .whychoose_card:hover .why_icon  i{
+    color: #fff;
+}  
 .ndis_whychoose .why_icon{
    background: #eef2ef;
 }
 .whychoose_card:hover .why_icon{
-   background-color:#285430 ;
+   background-color:#fc7300 ;
 }
 .whychoose_card:hover .why_icon i{
    color: #fff;
+}
+.whychoose_card:hover .why_icon img{
+   filter: brightness(0) invert(1);
+}
+.whychoose_card .readmore {
+   display: none;
 }
 /* support page end */
 
@@ -1382,6 +1395,52 @@ font-weight: 400;
    background-image: url(../images/minus.svg) !important;
 }
 /* faq page end */
+
+
+/* services page */
+.services_sidebar{
+   padding: 30px 30px;
+   border-radius: 30px;
+   background-color: #ffff;
+}
+.services_sidebar ul li {
+   margin-bottom: 10px;
+   padding: 0;
+   position: relative;
+}
+.services_sidebar ul li a {
+   display: block;
+   font-size: 18px;
+   line-height: 18px;
+   padding: 20px;
+   font-weight: 500;
+   position: relative;
+   z-index: 1;
+   -webkit-transition: all 0.4s linear;
+   transition: all 0.4s linear;
+   color: #171717;
+   background: #f4f4f4;
+   border-radius: 10px;
+}
+.services_sidebar ul li a:hover,.services_sidebar ul li a.active{
+ background-color: #fc7300;
+   color: #fff;
+}
+.services_sidebar ul li a:before {
+   position: absolute;
+   right: 20px;
+   top: 50%;
+   content: "";
+   background: #6e6e78;
+   width: 8px;
+   height: 8px;
+   border-radius: 100px;
+   margin-top: -4px;
+}
+.services_sidebar ul li:hover a:before, .services_sidebar ul li a.active:before {
+   background: #fff;
+}
+/* services page end */
 
 
 /* Responsive */

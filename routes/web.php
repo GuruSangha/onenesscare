@@ -38,3 +38,7 @@ Route::get('/careers', function () {
     return view('pages.careers');
 });
 
+
+Route::get('/employment-support', function () {
+    return view('pages/services.employment-support');
+});

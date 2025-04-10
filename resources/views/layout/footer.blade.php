@@ -46,7 +46,6 @@
                            <h4>Company</h4>
                            <ul class="footer_link">
                               <li><a href="/contact">Help Center</a></li>
-                              <li><a href="/careers">Careers</a></li>
                               <li><a href="#">Privacy</a></li>
                            </ul>
                         </div>

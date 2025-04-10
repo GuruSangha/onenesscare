@@ -80,7 +80,7 @@
          <div class="row">
             <div class="col-lg-6">
                <h5 class="subheading">WHY CHOOSE US</h5>
-               <h2 class="heading">Covering All the NDIS Services Fields</h2>
+               <h2 class="heading">Because Peace of Mind Should Be Part of Your Plan</h2>
             </div>
             <div class="col-lg-6 ps-lg-4">
                <p class="pra">
@@ -291,7 +291,7 @@
    <!-- Services Section End -->
 
    <!--Testimonial Start -->
-   <section class="testimonial_sec sec_pad">
+  <!-- <section class="testimonial_sec sec_pad">
       <div class="container">
          <div class="row">
             <div class="col-lg-4">
@@ -347,6 +347,7 @@
          </div>
       </div>
    </section>
+   --->
 
    <!--Testimonial End -->
 
@@ -355,7 +356,7 @@
    <section class="tcr_marquee_sec sec_pad">
       <div class="container-fluid">
          <div class="tcr_marquee_inner">
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-end">
                <marquee class="marquee-title" behavior="scroll" direction="left" scrollamount="80" scrolldelay="500">
                   <span>* Where Every Voice Counts</span> <span>* Where Every Voice Counts</span> <span>* Where Every Voice Counts</span>
                </marquee>
@@ -366,7 +367,7 @@
    <!--Marquee Section End -->
 
    <!--Portfolio Section Start -->
-   <section class="portfolio_sec sec_pad">
+   <!--<section class="portfolio_sec sec_pad">
       <div class="container">
          <h5 class="subheading text-center">Our Portfolio</h5>
          <h2 class="heading text-center">Explore Our Portfolio</h2>
@@ -405,6 +406,7 @@
 
       </div>
    </section>
+   --->
 
    <!--Portfolio Section End -->
 

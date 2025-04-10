@@ -130,7 +130,7 @@
    </section>
 
    <!-- Our Team Section -->
-   <section class="our-team sec_pad pt-0" id="team" data-aos="fade-up" data-aos-duration="800">
+   <!--<section class="our-team sec_pad pt-0" id="team" data-aos="fade-up" data-aos-duration="800">
       <div class="container">
          <div class="our-team-inner sec_pad">
             <div class="row align-items-center">
@@ -203,11 +203,11 @@
             </div>
          </div>
       </div>
-   </section>
+   </section>-->
    <!-- Our Team Section End-->
 
    <!--Testimonial Start -->
-   <section class="testimonial_sec sec_pad">
+  <!-- <section class="testimonial_sec sec_pad">
       <div class="container">
          <div class="row">
             <div class="col-lg-4">
@@ -246,7 +246,7 @@
             </div>
          </div>
       </div>
-   </section>
+   </section>-->
    <!--Testimonial End -->
 
 
