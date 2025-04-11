@@ -33,12 +33,11 @@ Route::get('/faq', function () {
     return view('pages.faq');
 });
 
-
-Route::get('/careers', function () {
-    return view('pages.careers');
+Route::get('/services', function () {
+    return view('pages/services');
 });
 
-
-Route::get('/employment-support', function () {
-    return view('pages/services.employment-support');
+Route::get('/privacy', function () {
+    return view('pages/privacy');
 });
+

@@ -52,19 +52,19 @@
                         Services
                      </a>
                      <ul class="dropdown-menu" aria-labelledby="ServicesMenu">
-                        <li><a class="dropdown-item" href="#">Employment Support</a></li>
-                        <li><a class="dropdown-item" href="#">Daily Personal Care</a></li>
-                        <li><a class="dropdown-item" href="#">Shared Living Assistance</a></li>
-                        <li><a class="dropdown-item" href="#">Household Help</a></li>
-                        <li><a class="dropdown-item" href="#">High Intensity Care</a></li>
-                        <li><a class="dropdown-item" href="#">Transport Assistance</a></li>
-                        <li><a class="dropdown-item" href="#">Community Participation</a></li>
-                        <li><a class="dropdown-item" href="#">Social & Recreational Access</a></li>
-                        <li><a class="dropdown-item" href="#">Life Transitions Support</a></li>
-                        <li><a class="dropdown-item" href="#">In-Home Nursing Care</a></li>
-                        <li><a class="dropdown-item" href="#">Life Skills Development</a></li>
-                        <li><a class="dropdown-item" href="#">Supported Employment</a></li>
-                        <li><a class="dropdown-item" href="#">Group Centre Activities</a></li>
+                        <li><a class="dropdown-item" href="/services#tab-employment">Employment Support</a></li>
+                        <li><a class="dropdown-item" href="/services#tab-daily">Daily Personal Care</a></li>
+                        <li><a class="dropdown-item" href="/services#tab-shared">Shared Living Assistance</a></li>
+                        <li><a class="dropdown-item" href="/services#tab-household">Household Help</a></li>
+                        <li><a class="dropdown-item" href="/services#tab-high">High Intensity Care</a></li>
+                        <li><a class="dropdown-item" href="/services#tab-transport">Transport Assistance</a></li>
+                        <li><a class="dropdown-item" href="/services#tab-community">Community Participation</a></li>
+                        <li><a class="dropdown-item" href="/services#tab-social">Social & Recreational Access</a></li>
+                        <li><a class="dropdown-item" href="/services#tab-transitions">Life Transitions Support</a></li>
+                        <li><a class="dropdown-item" href="/services#tab-nursing">In-Home Nursing Care</a></li>
+                        <li><a class="dropdown-item" href="/services#tab-lifeskills">Life Skills Development</a></li>
+                        <li><a class="dropdown-item" href="/services#tab-supported">Supported Employment</a></li>
+                        <li><a class="dropdown-item" href="/services#tab-group">Group Centre Activities</a></li>
                         </ul>
 
                   </li>

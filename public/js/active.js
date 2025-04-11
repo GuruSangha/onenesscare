@@ -132,3 +132,5 @@ $(owl).on("translated.owl.carousel", function (event) {
         $('.header').removeClass('navbar-sticky');
     }
 });
+
+

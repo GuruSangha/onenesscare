@@ -46,7 +46,7 @@
                            <h4>Company</h4>
                            <ul class="footer_link">
                               <li><a href="/contact">Help Center</a></li>
-                              <li><a href="#">Privacy</a></li>
+                              <li><a href="/privacy">Privacy</a></li>
                            </ul>
                         </div>
                      </div>
@@ -90,6 +90,33 @@
          return new bootstrap.Tooltip(tooltipTriggerEl)
       })
    </script>
+<script>
+  function activateTabFromHash() {
+    const hash = window.location.hash;
+
+    if (hash && hash.startsWith("#tab-")) {
+      const tabTriggerEl = document.querySelector(hash);
+      if (tabTriggerEl) {
+        const tab = new bootstrap.Tab(tabTriggerEl);
+        tab.show();
+
+        // Scroll to top after a tiny delay to allow tab switch
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 200);
+      }
+    }
+  }
+
+  // Run on page load
+  document.addEventListener("DOMContentLoaded", activateTabFromHash);
+
+  // Run when hash changes (same page click)
+  window.addEventListener("hashchange", activateTabFromHash);
+</script>
+
+
+
 </body>
 
 </html>
