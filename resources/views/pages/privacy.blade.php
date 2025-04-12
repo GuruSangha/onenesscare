@@ -84,7 +84,7 @@
    If you have any questions about our Privacy Policy or how your information is handled, please contact us at:
 </p>
 <p>
-   <strong>Email:</strong> info@onenesscare.com.au<br>
+   <strong>Email:</strong> admin@onenesscare.com.au<br>
    <strong>Phone:</strong> +61 478 295 297<br>
    <strong>Address:</strong> 26 Pepperdine Way, Lucas, VIC 3350
 </p>
