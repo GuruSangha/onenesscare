@@ -37,9 +37,8 @@
                            <h4>Services</h4>
                            <ul class="footer_link">
                               <li><a href="/ndis-support">NDIS Support</a></li>
-                              <li><a href="#">Disability Services</a></li>
-                              <li><a href="#">In Home Support </a></li>
-                              <li><a href="#">Senior Care</a></li>
+                              <li><a href="/services?tab=employment">Disability Services</a></li>
+                              <li><a href="/services?tab=daily">In Home Support </a></li>
                            </ul>
                         </div>
                         <div class="col-md-4">
