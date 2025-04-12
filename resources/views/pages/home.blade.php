@@ -274,7 +274,7 @@
       <div class="service-slide">
          <div class="service-number">{{ str_pad($index + 1, 2, '0', STR_PAD_LEFT) }}</div>
          <div class="service_img">
-            <img src="{{ asset('images/services/' . $service['image']) }}" class="img-fluid" alt="{{ $service['title'] }}">
+            <img src="{{ asset('images/services/s/' . $service['image']) }}" width="150" height="150" class="img-fluid" alt="{{ $service['title'] }}">
          </div>
          <div class="service-wrapper">
             <h3>{{ $service['title'] }}</h3>
