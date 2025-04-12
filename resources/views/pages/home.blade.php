@@ -21,7 +21,8 @@
                      </div>
                      <div class="col-lg-6">
                         <div class="hero_right">
-                           <img src="{{ asset('images/banner-img01.png') }}" class="img-fluid" alt="Banner Image 1" />
+                           <img src="{{ asset('images/banner-img01.png') }}" class="d-lg-inline-block d-none img-fluid" alt="Banner Image 1" />
+                           <img src="{{ asset('images/banner-mob-img01.png') }}" class="d-lg-none d-lg-inline-block img-fluid" alt="Banner Image 1" />
                         </div>
                      </div>
                   </div>
@@ -41,7 +42,8 @@
                      </div>
                      <div class="col-lg-6">
                         <div class="hero_right">
-                           <img src="{{ asset('images/banner-img02.png') }}" class="img-fluid" alt="Banner Image 2" />
+                           <img src="{{ asset('images/banner-img02.png') }}" class="d-lg-inline-block d-none img-fluid" alt="Banner Image 2" />
+                           <img src="{{ asset('images/banner-mob-img02.png') }}" class="d-lg-none d-lg-inline-block img-fluid" alt="Banner Image 2" />
                         </div>
                      </div>
                   </div>
@@ -61,7 +63,8 @@
                      </div>
                      <div class="col-lg-6">
                         <div class="hero_right">
-                           <img src="{{ asset('images/banner-img03.png') }}" class="img-fluid" alt="Banner Image 3" />
+                           <img src="{{ asset('images/banner-img03.png') }}" class="d-lg-inline-block d-none img-fluid" alt="Banner Image 3" />
+                           <img src="{{ asset('images/banner-mob-img03.png') }}" class="d-lg-none d-lg-inline-block img-fluid" alt="Banner Image 3" />
                         </div>
                      </div>
                   </div>

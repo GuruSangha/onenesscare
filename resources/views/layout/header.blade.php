@@ -72,9 +72,12 @@
                   <li class="nav-item">
                      <a class="nav-link {{ request()->is('ndis-support') ? 'active' : '' }}" href="/ndis-support">NDIS Support</a>
                   </li>
+                  <li class="nav-item d-inline-block d-lg-none">
+                  <a href="/contact" class="contact_btn {{ request()->is('contact') ? 'active' : '' }}">Contact Us</a>
+                  </li>
                </ul>
             </div>
-            <a href="/contact" class="contact_btn {{ request()->is('contact') ? 'active' : '' }}">Contact Us</a>
+            <a href="/contact" class="d-none d-lg-inline-block contact_btn {{ request()->is('contact') ? 'active' : '' }}">Contact Us</a>
          </div>
       </nav>
    </header>

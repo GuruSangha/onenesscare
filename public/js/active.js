@@ -64,14 +64,14 @@ $('.service-slider').owlCarousel({
    "<i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i>",
    "<i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i>"],
    responsive: {
-      768: {
+      992: {
           items: 3.5,
       },
-      500: {
-          items: 2,
+      768: {
+          items: 2.3,
       },
       0: {
-          items: 1.5,
+          items: 1,
       }
   },
 });

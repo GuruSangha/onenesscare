@@ -36,9 +36,19 @@
                         <div class="col-md-4">
                            <h4>Services</h4>
                            <ul class="footer_link">
+<<<<<<< HEAD
                               <li><a href="/ndis-support">NDIS Support</a></li>
                               <li><a href="/services?tab=employment">Disability Services</a></li>
                               <li><a href="/services?tab=daily">In Home Support </a></li>
+=======
+                           <li><a href="/services#tab-employment">Employment Support</a></li>
+                              <li><a href="/services#tab-daily">Daily Personal Care</a></li>
+                              <li><a href="/services#tab-household">Household Help</a></li>
+                              <li><a href="/services#tab-high">High Intensity Care</a></li>
+                              <li><a href="/services#tab-transport">Transport Assistance</a></li>
+                              <li><a href="/services#tab-nursing">In-Home Nursing Care</a></li>
+                              <li><a href="/services#tab-lifeskills">Life Skills Development</a></li>
+>>>>>>> 3438bf6 (responsive)
                            </ul>
                         </div>
                         <div class="col-md-4">
