@@ -46,6 +46,7 @@ Route::get('/services', function () {
         'supported' => 'Supported Employment',
         'group' => 'Group Centre Activities',
     ];
+    $tab = isset($services[request()->query('tab')]) ? request()->query('tab') : 'employment';
 
-    return view('pages.services', compact('services'));
+    return view('pages.services', compact('services','tab'));
 })->name('services');

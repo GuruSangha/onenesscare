@@ -1,21 +1,17 @@
 @extends('main')
 
 @section('content')
-   @php
-       $tab = isset($services[request()->query('tab')]) ? request()->query('tab') : 'employment';
-
-   @endphp
   <!-- About Hero Section -->
   <div class="about-hero d-flex align-items-center faq-hero">
       <div class="container position-relative">
          <div class="row">
             <div class="col-md-12">
                <h1 class="page-title" id="page_title">
-                   {{ isset($services[$tab]) ? $services[$tab] : $services['employment'] }}
+                   {{ isset($services[$tab]) ? $services[$tab] : '' }}
                </h1>
                <div class="page-breadcrumbs">
                   <div class="breadcrumb"><a href="/">Home</a><span class="tcr-readcrumb"><a
-                           href="/employment-support">Service</a></span><span id="service_title_display" class="current">{{ isset($services[$tab]) ? $services[$tab] : $services['employment'] }}</span>
+                           href="/employment-support">Service</a></span><span id="service_title_display" class="current">{{ isset($services[$tab]) ? $services[$tab] : '' }}</span>
                   </div>
                </div>
             </div>
