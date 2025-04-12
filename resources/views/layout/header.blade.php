@@ -52,19 +52,19 @@
                         Services
                      </a>
                      <ul class="dropdown-menu" aria-labelledby="ServicesMenu">
-                        <li><a class="dropdown-item {{ $tab == 'employment' ? 'active' : ''}}" href="/services?tab=employment">Employment Support</a></li>
-                        <li><a class="dropdown-item {{ $tab == 'daily' ? 'active' : ''}}" href="/services?tab=daily">Daily Personal Care</a></li>
-                        <li><a class="dropdown-item {{ $tab == 'shared' ? 'active' : ''}}" href="/services?tab=shared">Shared Living Assistance</a></li>
-                        <li><a class="dropdown-item {{ $tab == 'household' ? 'active' : ''}}" href="/services?tab=household">Household Help</a></li>
-                        <li><a class="dropdown-item {{ $tab == 'high' ? 'active' : ''}}" href="/services?tab=high">High Intensity Care</a></li>
-                        <li><a class="dropdown-item {{ $tab == 'transport' ? 'active' : ''}}" href="/services?tab=transport">Transport Assistance</a></li>
-                        <li><a class="dropdown-item {{ $tab == 'community' ? 'active' : ''}}" href="/services?tab=community">Community Participation</a></li>
-                        <li><a class="dropdown-item {{ $tab == 'social' ? 'active' : ''}}" href="/services?tab=social">Social & Recreational Access</a></li>
-                        <li><a class="dropdown-item {{ $tab == 'transitions' ? 'active' : ''}}" href="/services?tab=transitions">Life Transitions Support</a></li>
-                        <li><a class="dropdown-item {{ $tab == 'nursing' ? 'active' : ''}}" href="/services?tab=nursing">In-Home Nursing Care</a></li>
-                        <li><a class="dropdown-item {{ $tab == 'lifeskills' ? 'active' : ''}}" href="/services?tab=lifeskills">Life Skills Development</a></li>
-                        <li><a class="dropdown-item {{ $tab == 'supported' ? 'active' : ''}}" href="/services?tab=supported">Supported Employment</a></li>
-                        <li><a class="dropdown-item {{ $tab == 'group' ? 'active' : ''}}" href="/services?tab=group">Group Centre Activities</a></li>
+                        <li><a class="dropdown-item {{ request()->query('tab') == 'employment' ? 'active' : ''}}" href="/services?tab=employment">Employment Support</a></li>
+                        <li><a class="dropdown-item {{ request()->query('tab') == 'daily' ? 'active' : ''}}" href="/services?tab=daily">Daily Personal Care</a></li>
+                        <li><a class="dropdown-item {{ request()->query('tab') == 'shared' ? 'active' : ''}}" href="/services?tab=shared">Shared Living Assistance</a></li>
+                        <li><a class="dropdown-item {{ request()->query('tab') == 'household' ? 'active' : ''}}" href="/services?tab=household">Household Help</a></li>
+                        <li><a class="dropdown-item {{ request()->query('tab') == 'high' ? 'active' : ''}}" href="/services?tab=high">High Intensity Care</a></li>
+                        <li><a class="dropdown-item {{ request()->query('tab') == 'transport' ? 'active' : ''}}" href="/services?tab=transport">Transport Assistance</a></li>
+                        <li><a class="dropdown-item {{ request()->query('tab') == 'community' ? 'active' : ''}}" href="/services?tab=community">Community Participation</a></li>
+                        <li><a class="dropdown-item {{ request()->query('tab') == 'social' ? 'active' : ''}}" href="/services?tab=social">Social & Recreational Access</a></li>
+                        <li><a class="dropdown-item {{ request()->query('tab') == 'transitions' ? 'active' : ''}}" href="/services?tab=transitions">Life Transitions Support</a></li>
+                        <li><a class="dropdown-item {{ request()->query('tab') == 'nursing' ? 'active' : ''}}" href="/services?tab=nursing">In-Home Nursing Care</a></li>
+                        <li><a class="dropdown-item {{ request()->query('tab') == 'lifeskills' ? 'active' : ''}}" href="/services?tab=lifeskills">Life Skills Development</a></li>
+                        <li><a class="dropdown-item {{ request()->query('tab') == 'supported' ? 'active' : ''}}" href="/services?tab=supported">Supported Employment</a></li>
+                        <li><a class="dropdown-item {{ request()->query('tab') == 'group' ? 'active' : ''}}" href="/services?tab=group">Group Centre Activities</a></li>
                         </ul>
 
                   </li>
