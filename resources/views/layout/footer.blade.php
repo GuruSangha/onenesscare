@@ -29,7 +29,7 @@
                               <li><a href="/">Home</a></li>
                               <!-- <li><a href="#">Blog Classic</a></li> -->
                               <li><a href="/about">About us</a></li>
-                              <li><a href="/about#team">Our Team</a></li>
+                              <!-- <li><a href="/about#pills-miss">Our Team</a></li> -->
                               <li><a href="/faq">FAQ</a></li>
                            </ul>
                         </div>

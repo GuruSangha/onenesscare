@@ -62,9 +62,7 @@
                      <div class="tab-pane fade {{ $tab == 'employment' ? 'show active' : ''}}" id="employment" role="tabpanel">
                         <div class="services_cnt">
                            <div class="service-thumbnail">
-                              <img width="1000" height="600"
-                                 src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
-                                 class="img-fluid w-100" alt="services-img">
+                              <img width="1000" height="600" src="{{ asset('images/services/job-support.jpg') }}" class="img-fluid w-100" alt="services-img">
                            </div>
                            <div class="services_heading">
                               <h2>Assistance to Access and Maintain Employment or Higher Education</h2>
@@ -128,9 +126,7 @@
                      <!-- Daily Personal Care Tab -->
                      <div class="tab-pane fade {{ $tab == 'daily' ? 'show active' : ''}}" id="daily" role="tabpanel">
                         <div class="service-thumbnail">
-                           <img width="1000" height="600"
-                              src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
-                              class="img-fluid w-100" alt="services-img">
+                        <img width="1000" height="600" src="{{ asset('images/services/personal-care.jpg') }}" class="img-fluid w-100" alt="services-img">
                         </div>
                         <div class="services_cnt">
                            <div class="services_heading">
@@ -171,9 +167,7 @@
                      <!-- Shared Living Assistance Tab -->
                      <div class="tab-pane fade {{ $tab == 'shared' ? 'show active' : ''}}" id="shared" role="tabpanel">
                         <div class="service-thumbnail">
-                           <img width="1000" height="600"
-                              src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
-                              class="img-fluid w-100" alt="services-img">
+                        <img width="1000" height="600" src="{{ asset('images/services/shared-living.jpg') }}" class="img-fluid w-100" alt="services-img">
                         </div>
                         <div class="services_cnt">
                            <div class="services_heading">
@@ -206,9 +200,7 @@
                      <!-- Household Help Tab -->
                      <div class="tab-pane fade {{ $tab == 'household' ? 'show active' : ''}}" id="household" role="tabpanel">
                         <div class="service-thumbnail">
-                           <img width="1000" height="600"
-                              src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
-                              class="img-fluid w-100" alt="services-img">
+                        <img width="1000" height="600" src="{{ asset('images/services/home-help.jpg') }}" class="img-fluid w-100" alt="services-img">
                         </div>
                         <div class="services_cnt">
                            <div class="services_heading">
@@ -239,9 +231,7 @@
                      <!-- High Intensity Daily Personal Activities -->
                      <div class="tab-pane fade {{ $tab == 'high' ? 'show active' : ''}}" id="high" role="tabpanel">
                         <div class="service-thumbnail">
-                           <img width="1000" height="600"
-                              src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
-                              class="img-fluid w-100" alt="services-img">
+                        <img width="1000" height="600" src="{{ asset('images/services/high-support.jpg') }}" class="img-fluid w-100" alt="services-img">
                         </div>
                         <div class="services_cnt">
                            <div class="services_heading">
@@ -273,9 +263,7 @@
                      <!-- Assistance WITH Travel–Transport -->
                      <div class="tab-pane fade {{ $tab == 'transport' ? 'show active' : ''}}" id="transport" role="tabpanel">
                         <div class="service-thumbnail">
-                           <img width="1000" height="600"
-                              src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
-                              class="img-fluid w-100" alt="services-img">
+                        <img width="1000" height="600" src="{{ asset('images/services/safe-transport.jpg') }}" class="img-fluid w-100" alt="services-img">
                         </div>
                         <div class="services_cnt">
                            <div class="services_heading">
@@ -304,9 +292,7 @@
                      <!-- INNOVATIVE COMMUNITY PARTICIPATION ASSISTANCE -->
                      <div class="tab-pane fade {{ $tab == 'community' ? 'show active' : ''}}" id="community" role="tabpanel">
                         <div class="service-thumbnail">
-                           <img width="1000" height="600"
-                              src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
-                              class="img-fluid w-100" alt="services-img">
+                        <img width="1000" height="600" src="{{ asset('images/services/social-skills.jpg') }}" class="img-fluid w-100" alt="services-img">
                         </div>
                         <div class="services_cnt">
                            <div class="services_heading">
@@ -338,9 +324,7 @@
                      <!-- Assistance to Access Community, Social and Recreational Activities -->
                      <div class="tab-pane fade {{ $tab == 'social' ? 'show active' : ''}}" id="social" role="tabpanel">
                         <div class="service-thumbnail">
-                           <img width="1000" height="600"
-                              src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
-                              class="img-fluid w-100" alt="services-img">
+                        <img width="1000" height="600" src="{{ asset('images/services/community-fun.jpg') }}" class="img-fluid w-100" alt="services-img">
                         </div>
                         <div class="services_cnt">
                            <div class="services_heading">
@@ -374,9 +358,7 @@
                      <!-- Life Stages, Transitions & Supports -->
                      <div class="tab-pane fade {{ $tab == 'transitions' ? 'show active' : ''}}" id="transitions" role="tabpanel">
                         <div class="service-thumbnail">
-                           <img width="1000" height="600"
-                              src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
-                              class="img-fluid w-100" alt="services-img">
+                        <img width="1000" height="600" src="{{ asset('images/services/life-changes.jpg') }}" class="img-fluid w-100" alt="services-img">
                         </div>
                         <div class="services_cnt">
                            <div class="services_heading">
@@ -403,9 +385,7 @@
                      <!-- Community Nursing Care -->
                      <div class="tab-pane fade {{ $tab == 'nursing' ? 'show active' : ''}}" id="nursing" role="tabpanel">
                         <div class="service-thumbnail">
-                           <img width="1000" height="600"
-                              src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
-                              class="img-fluid w-100" alt="services-img">
+                        <img width="1000" height="600" src="{{ asset('images/services/medical-care.jpg') }}" class="img-fluid w-100" alt="services-img">
                         </div>
                         <div class="services_cnt">
                            <div class="services_heading">
@@ -437,9 +417,7 @@
                      <!-- Development of Daily Living and Life Skills -->
                      <div class="tab-pane fade {{ $tab == 'lifeskills' ? 'show active' : ''}}" id="lifeskills" role="tabpanel">
                         <div class="service-thumbnail">
-                           <img width="1000" height="600"
-                              src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
-                              class="img-fluid w-100" alt="services-img">
+                        <img width="1000" height="600" src="{{ asset('images/services/life-skills.jpg') }}" class="img-fluid w-100" alt="services-img">
                         </div>
                         <div class="services_cnt">
                            <div class="services_heading">
@@ -468,9 +446,7 @@
                      <!-- Specialised Supported Employment -->
                      <div class="tab-pane fade {{ $tab == 'supported' ? 'show active' : ''}}" id="supported" role="tabpanel">
                         <div class="service-thumbnail">
-                           <img width="1000" height="600"
-                              src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
-                              class="img-fluid w-100" alt="services-img">
+                        <img width="1000" height="600" src="{{ asset('images/services/job-training.jpg') }}" class="img-fluid w-100" alt="services-img">
                         </div>
                         <div class="services_cnt">
                            <div class="services_heading">
@@ -497,9 +473,7 @@
                      <!-- Group & Centre Based Activities -->
                      <div class="tab-pane fade {{ $tab == 'group' ? 'show active' : ''}}" id="group" role="tabpanel">
                         <div class="service-thumbnail">
-                           <img width="1000" height="600"
-                              src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
-                              class="img-fluid w-100" alt="services-img">
+                        <img width="1000" height="600" src="{{ asset('images/services/group-events.jpg') }}" class="img-fluid w-100" alt="services-img">
                         </div>
                         <div class="services_cnt">
                            <div class="services_heading">

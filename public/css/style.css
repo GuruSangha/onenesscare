@@ -187,7 +187,10 @@ body {
     color: #fc7300;
     background-color: transparent;
 }
-
+.header .dropdown-menu .dropdown-item.active {
+   color: #fc7300;
+   background: transparent;
+}
 
 /* hero-section */
 .hero_inner {
@@ -997,7 +1000,7 @@ font-weight: 400;
    background-position: top center;
 }
 .faq-hero{
-   background-image: url('../images/faq-bg.jpg');
+   background-image: url('../images/services-img4.jpg');
 }
 .careers-hero{
    background-image: url('../images/career-bg.jpg');
@@ -1933,6 +1936,9 @@ section.support_sec.sec_pad {
 }
 .services_sec_inner {
    padding: 40px 30px;
+   border-radius: 20px;
+}
+.about_left img {
    border-radius: 20px;
 }
 }
