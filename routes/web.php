@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/about', function () {
+    return view('pages.about');
 });
+
+Route::get('/contact', [ContactController::class, 'show'])->name('contact.show');
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+
+
+Route::get('/ndis-support', function () {
+    return view('pages.ndis-support');
+});
+
+Route::get('/faq', function () {
+    return view('pages.faq');
+});
+
+Route::get('/services', function () {
+    return view('pages/services');
+});
+
+Route::get('/privacy', function () {
+    return view('pages/privacy');
+});
+
