@@ -84,39 +84,10 @@
    <script src="{{ asset('js/active.js') }}"></script>
    <script>
       AOS.init();
-
       var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
          return new bootstrap.Tooltip(tooltipTriggerEl)
       })
    </script>
-<script>
-  function activateTabFromHash() {
-    const hash = window.location.hash;
-
-    if (hash && hash.startsWith("#tab-")) {
-      const tabTriggerEl = document.querySelector(hash);
-      if (tabTriggerEl) {
-        const tab = new bootstrap.Tab(tabTriggerEl);
-        tab.show();
-
-        // Scroll to top after a tiny delay to allow tab switch
-        setTimeout(() => {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }, 200);
-      }
-    }
-  }
-
-  // Run on page load
-  document.addEventListener("DOMContentLoaded", activateTabFromHash);
-
-  // Run when hash changes (same page click)
-  window.addEventListener("hashchange", activateTabFromHash);
-</script>
-
-
-
 </body>
-
 </html>

@@ -7,10 +7,12 @@
       <div class="container position-relative">
          <div class="row">
             <div class="col-md-12">
-               <h1 class="page-title">Employment Support</h1>
+               <h1 class="page-title" id="page_title">
+                   {{ isset($services[request()->query('tab')]) ? $services[request()->query('tab')] : '' }}
+               </h1>
                <div class="page-breadcrumbs">
                   <div class="breadcrumb"><a href="/">Home</a><span class="tcr-readcrumb"><a
-                           href="/employment-support">Service</a></span><span class="current">Employment Support</span>
+                           href="/employment-support">Service</a></span><span id="service_title_display" class="current">{{ isset($services[request()->query('tab')]) ? $services[request()->query('tab')] : '' }}</span>
                   </div>
                </div>
             </div>
@@ -25,31 +27,31 @@
                <div class="col-lg-4">
                   <div class="services_sidebar">
                      <ul class="nav flex-column nav-pills" id="services-tab" role="tablist">
-                        <li><a class="nav-link active" id="tab-employment" data-bs-toggle="pill" href="#employment"
+                        <li><a class="nav-link {{ request()->query('tab') == 'employment' ? 'active' : ''}}" id="tab-employment" data-bs-toggle="pill" href="#employment"
                               role="tab">Employment Support</a></li>
-                        <li><a class="nav-link" id="tab-daily" data-bs-toggle="pill" href="#daily" role="tab">Daily
+                        <li><a class="nav-link {{ request()->query('tab') == 'daily' ? 'active' : ''}}" id="tab-daily" data-bs-toggle="pill" href="#daily" role="tab">Daily
                               Personal Care</a></li>
-                        <li><a class="nav-link" id="tab-shared" data-bs-toggle="pill" href="#shared" role="tab">Shared
+                        <li><a class="nav-link {{ request()->query('tab') == 'shared' ? 'active' : ''}}" id="tab-shared" data-bs-toggle="pill" href="#shared" role="tab">Shared
                               Living Assistance</a></li>
-                        <li><a class="nav-link" id="tab-household" data-bs-toggle="pill" href="#household"
+                        <li><a class="nav-link {{ request()->query('tab') == 'household' ? 'active' : ''}}" id="tab-household" data-bs-toggle="pill" href="#household"
                               role="tab">Household Help</a></li>
-                        <li><a class="nav-link" id="tab-high" data-bs-toggle="pill" href="#high" role="tab">High Intensity
+                        <li><a class="nav-link {{ request()->query('tab') == 'high' ? 'active' : ''}}" id="tab-high" data-bs-toggle="pill" href="#high" role="tab">High Intensity
                               Care</a></li>
-                        <li><a class="nav-link" id="tab-transport" data-bs-toggle="pill" href="#transport"
+                        <li><a class="nav-link {{ request()->query('tab') == 'transport' ? 'active' : ''}}" id="tab-transport" data-bs-toggle="pill" href="#transport"
                               role="tab">Transport Assistance</a></li>
-                        <li><a class="nav-link" id="tab-community" data-bs-toggle="pill" href="#community"
+                        <li><a class="nav-link {{ request()->query('tab') == 'community' ? 'active' : ''}}" id="tab-community" data-bs-toggle="pill" href="#community"
                               role="tab">Community Participation</a></li>
-                        <li><a class="nav-link" id="tab-social" data-bs-toggle="pill" href="#social" role="tab">Social
+                        <li><a class="nav-link {{ request()->query('tab') == 'social' ? 'active' : ''}}" id="tab-social" data-bs-toggle="pill" href="#social" role="tab">Social
                               &amp; Recreational Access</a></li>
-                        <li><a class="nav-link" id="tab-transitions" data-bs-toggle="pill" href="#transitions"
+                        <li><a class="nav-link {{ request()->query('tab') == 'transitions' ? 'active' : ''}}" id="tab-transitions" data-bs-toggle="pill" href="#transitions"
                               role="tab">Life Transitions Support</a></li>
-                        <li><a class="nav-link" id="tab-nursing" data-bs-toggle="pill" href="#nursing" role="tab">In-Home
+                        <li><a class="nav-link {{ request()->query('tab') == 'nursing' ? 'active' : ''}}" id="tab-nursing" data-bs-toggle="pill" href="#nursing" role="tab">In-Home
                               Nursing Care</a></li>
-                        <li><a class="nav-link services-item" id="tab-lifeskills" data-bs-toggle="pill" href="#lifeskills"
+                        <li><a class="nav-link services-item {{ request()->query('tab') == 'lifeskills' ? 'active' : ''}}" id="tab-lifeskills" data-bs-toggle="pill" href="#lifeskills"
                               role="tab">Life Skills Development</a></li>
-                        <li><a class="nav-link" id="tab-supported" data-bs-toggle="pill" href="#supported"
+                        <li><a class="nav-link {{ request()->query('tab') == 'supported' ? 'active' : ''}}" id="tab-supported" data-bs-toggle="pill" href="#supported"
                               role="tab">Supported Employment</a></li>
-                        <li><a class="nav-link" id="tab-group" data-bs-toggle="pill" href="#group" role="tab">Group Centre
+                        <li><a class="nav-link {{ request()->query('tab') == 'group' ? 'active' : ''}}" id="tab-group" data-bs-toggle="pill" href="#group" role="tab">Group Centre
                               Activities</a></li>
                      </ul>
                   </div>
@@ -58,7 +60,7 @@
                <div class="col-lg-8 ps-lg-5">
                   <div class="tab-content" id="services-tabContent">
                      <!-- Employment Support Tab -->
-                     <div class="tab-pane fade show active" id="employment" role="tabpanel">
+                     <div class="tab-pane fade {{ request()->query('tab') == 'employment' ? 'show active' : ''}}" id="employment" role="tabpanel">
                         <div class="services_cnt">
                            <div class="service-thumbnail">
                               <img width="1000" height="600"
@@ -125,7 +127,7 @@
                      <!-- Other tabs - content placeholders -->
 
                      <!-- Daily Personal Care Tab -->
-                     <div class="tab-pane fade" id="daily" role="tabpanel">
+                     <div class="tab-pane fade {{ request()->query('tab') == 'daily' ? 'show active' : ''}}" id="daily" role="tabpanel">
                         <div class="service-thumbnail">
                            <img width="1000" height="600"
                               src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
@@ -168,7 +170,7 @@
                      </div>
 
                      <!-- Shared Living Assistance Tab -->
-                     <div class="tab-pane fade" id="shared" role="tabpanel">
+                     <div class="tab-pane fade {{ request()->query('tab') == 'shared' ? 'show active' : ''}}" id="shared" role="tabpanel">
                         <div class="service-thumbnail">
                            <img width="1000" height="600"
                               src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
@@ -203,7 +205,7 @@
                      </div>
 
                      <!-- Household Help Tab -->
-                     <div class="tab-pane fade" id="household" role="tabpanel">
+                     <div class="tab-pane fade {{ request()->query('tab') == 'household' ? 'show active' : ''}}" id="household" role="tabpanel">
                         <div class="service-thumbnail">
                            <img width="1000" height="600"
                               src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
@@ -236,7 +238,7 @@
 
 
                      <!-- High Intensity Daily Personal Activities -->
-                     <div class="tab-pane fade" id="high" role="tabpanel">
+                     <div class="tab-pane fade {{ request()->query('tab') == 'high' ? 'show active' : ''}}" id="high" role="tabpanel">
                         <div class="service-thumbnail">
                            <img width="1000" height="600"
                               src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
@@ -270,7 +272,7 @@
                      </div>
 
                      <!-- Assistance WITH Travel–Transport -->
-                     <div class="tab-pane fade" id="transport" role="tabpanel">
+                     <div class="tab-pane fade {{ request()->query('tab') == 'transport' ? 'show active' : ''}}" id="transport" role="tabpanel">
                         <div class="service-thumbnail">
                            <img width="1000" height="600"
                               src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
@@ -301,7 +303,7 @@
                      </div>
 
                      <!-- INNOVATIVE COMMUNITY PARTICIPATION ASSISTANCE -->
-                     <div class="tab-pane fade" id="community" role="tabpanel">
+                     <div class="tab-pane fade {{ request()->query('tab') == 'community' ? 'show active' : ''}}" id="community" role="tabpanel">
                         <div class="service-thumbnail">
                            <img width="1000" height="600"
                               src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
@@ -335,7 +337,7 @@
                      </div>
 
                      <!-- Assistance to Access Community, Social and Recreational Activities -->
-                     <div class="tab-pane fade" id="social" role="tabpanel">
+                     <div class="tab-pane fade {{ request()->query('tab') == 'social' ? 'show active' : ''}}" id="social" role="tabpanel">
                         <div class="service-thumbnail">
                            <img width="1000" height="600"
                               src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
@@ -371,7 +373,7 @@
                      </div>
 
                      <!-- Life Stages, Transitions & Supports -->
-                     <div class="tab-pane fade" id="transitions" role="tabpanel">
+                     <div class="tab-pane fade {{ request()->query('tab') == 'transitions' ? 'show active' : ''}}" id="transitions" role="tabpanel">
                         <div class="service-thumbnail">
                            <img width="1000" height="600"
                               src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
@@ -400,7 +402,7 @@
                      </div>
 
                      <!-- Community Nursing Care -->
-                     <div class="tab-pane fade" id="nursing" role="tabpanel">
+                     <div class="tab-pane fade {{ request()->query('tab') == 'nursing' ? 'show active' : ''}}" id="nursing" role="tabpanel">
                         <div class="service-thumbnail">
                            <img width="1000" height="600"
                               src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
@@ -434,7 +436,7 @@
                      </div>
 
                      <!-- Development of Daily Living and Life Skills -->
-                     <div class="tab-pane fade" id="lifeskills" role="tabpanel">
+                     <div class="tab-pane fade {{ request()->query('tab') == 'lifeskills' ? 'show active' : ''}}" id="lifeskills" role="tabpanel">
                         <div class="service-thumbnail">
                            <img width="1000" height="600"
                               src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
@@ -465,7 +467,7 @@
                      </div>
 
                      <!-- Specialised Supported Employment -->
-                     <div class="tab-pane fade" id="supported" role="tabpanel">
+                     <div class="tab-pane fade {{ request()->query('tab') == 'supported' ? 'show active' : ''}}" id="supported" role="tabpanel">
                         <div class="service-thumbnail">
                            <img width="1000" height="600"
                               src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
@@ -494,7 +496,7 @@
                      </div>
 
                      <!-- Group & Centre Based Activities -->
-                     <div class="tab-pane fade" id="group" role="tabpanel">
+                     <div class="tab-pane fade {{ request()->query('tab') == 'group' ? 'show active' : ''}}" id="group" role="tabpanel">
                         <div class="service-thumbnail">
                            <img width="1000" height="600"
                               src="https://themecrafter.com/zaver/wp-content/uploads/2023/08/services-img2-1000x600.jpg"
@@ -540,4 +542,25 @@
       </div>
    </div>
 
+@endsection
+@section('scripts')
+<script>
+$(document).ready(function () {
+   const services = @json($services);
+   $('#services-tab .nav-link').on('click', function () {
+      let clickedId = $(this).attr('id');
+         const tabId = clickedId.replace('tab-', ''); // e.g. 'employment'
+         const serviceName = services[tabId];
+         if (serviceName) {
+            $('#page_title, #service_title_display').fadeOut(200, function () {
+                 $(this).text(serviceName).fadeIn(200);
+             });
+         }
+         $('.dropdown-item').removeClass('active');
+         $(`.dropdown-item[href="/services?tab=${tabId}"]`).addClass('active');
+         console.log("Clicked tab ID:", serviceName);
+         // Do something with clickedId
+      });
+});
+</script>
 @endsection

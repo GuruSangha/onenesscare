@@ -3,3 +3,5 @@
 @yield('content')
 
 @include('layout.footer')
+
+@yield('scripts')
