@@ -16,7 +16,7 @@
                            <p>At Oneness Care, we are committed to offering compassionate and personalized support to
                               individuals with disabilities, ensuring they lead fulfilling lives with independence and
                               dignity.</p>
-                           <a href="#" class="common_btn about_btn">More About us</a>
+                           <a href="/about" class="common_btn about_btn">More About us</a>
                         </div>
                      </div>
                      <div class="col-lg-6">
@@ -37,7 +37,7 @@
                            <h1 class="h1 heading">Empowering Lives Through Quality Care</h1>
                            <p>We provide tailored NDIS services that focus on enhancing quality of life, promoting
                               independence, and delivering care with empathy and respect.</p>
-                           <a href="#" class="common_btn about_btn">More About us</a>
+                           <a href="/about" class="common_btn about_btn">More About us</a>
                         </div>
                      </div>
                      <div class="col-lg-6">
@@ -58,7 +58,7 @@
                            <h1 class="h1 heading">Comprehensive Support for Every Need</h1>
                            <p>From in-home care to community participation, our expert team ensures that every
                               individual receives the right support to achieve their goals and aspirations.</p>
-                           <a href="#" class="common_btn about_btn">More About us</a>
+                           <a href="/about" class="common_btn about_btn">More About us</a>
                         </div>
                      </div>
                      <div class="col-lg-6">
