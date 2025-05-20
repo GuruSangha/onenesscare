@@ -72,12 +72,14 @@
                   <li class="nav-item">
                      <a class="nav-link {{ request()->is('ndis-support') ? 'active' : '' }}" href="/ndis-support">NDIS Support</a>
                   </li>
-                  <li class="nav-item d-inline-block d-lg-none">
-                  <a href="/contact" class="contact_btn {{ request()->is('contact') ? 'active' : '' }}">Contact Us</a>
+                  <li class="nav-item">
+                  <a href="/contact" class="nav-link {{ request()->is('contact') ? 'active' : '' }}">Contact Us</a>
                   </li>
                </ul>
             </div>
-            <a href="/contact" class="d-none d-lg-inline-block contact_btn {{ request()->is('contact') ? 'active' : '' }}">Contact Us</a>
+            <!-- <a href="/contact" class="d-none d-lg-inline-block contact_btn {{ request()->is('contact') ? 'active' : '' }}">Contact Us</a> -->
+            <a href="javascript:void(0)" class="ndis-logo"><img src="{{ asset('images/ndis-logo.png') }}" class="img-fluid" alt="Logo" />
+            </a></a>
          </div>
       </nav>
    </header>

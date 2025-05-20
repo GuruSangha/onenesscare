@@ -50,6 +50,9 @@
                               <li><a href="/contact">Help Center</a></li>
                               <li><a href="/privacy">Privacy</a></li>
                            </ul>
+                           <div class="ndis-footer-logo">
+                           <img src="{{ asset('images/ndis-footer-logo.png') }}" class="img-fluid" alt="Logo" />
+                            </div>
                         </div>
                      </div>
                   </div>

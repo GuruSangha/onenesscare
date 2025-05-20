@@ -1569,6 +1569,16 @@ font-weight: 400;
 }
 /* privacy page end */
 
+.ndis-logo img {
+   max-width: 150px;
+}
+.ndis-footer-logo img {
+   max-width: 200px;
+}
+.ndis-footer-logo {
+   margin-top: 25px;
+}
+
 /* Responsive */
 @media screen and (max-width:1399px) {
    .hero_inner .heading {
@@ -1793,6 +1803,12 @@ body {
    max-height: 75vh;
    overflow: auto;
    padding-top: 15px;
+   position: absolute;
+   top: 97px;
+   background: #fff;
+   width: calc(100% - 20px);
+   border-radius: 20px;
+   padding: 20px;
 }
 .common_btn {
    padding: 12px 25px !important;
@@ -1941,6 +1957,20 @@ section.support_sec.sec_pad {
 .about_left img {
    border-radius: 20px;
 }
+.header .navbar .container-fluid{
+   justify-content:normal;
+}
+.header .navbar-brand {
+   margin-right: auto;
+   order: 1;
+}
+.header .ndis-logo {
+   order: 2;
+}
+.header .navbar-toggler {
+   order: 3;
+   margin-left: 10px;
+}
 }
 
  @media (max-width: 767px) {
@@ -2027,5 +2057,8 @@ section.support_sec.sec_pad {
 }
 .h1.heading {
    min-height: 88px;
+}
+.ndis-logo img {
+   max-width: 120px;
 }
 }
